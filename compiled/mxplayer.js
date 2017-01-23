@@ -1,0 +1,1 @@
+var app=angular.module("mxPlayer",[]);app.controller("mxPlayer",function(a){a.title="Mx Music Player"});
