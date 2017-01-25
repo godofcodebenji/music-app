@@ -1,0 +1,15 @@
+.app_header {
+	min-height: 60px;
+	width: 100%;
+	background-color: $app-primary-color;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px 15px;
+	.app_header_menu_icon {
+		span {
+			color: $white;
+			font-size: 40px;
+			cursor: pointer;
+		}
+	}
+}

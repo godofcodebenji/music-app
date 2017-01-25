@@ -296,8 +296,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../framework/bootstrap/fonts/glyphicons-halflings-regular.eot");
+  src: url("../framework/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../framework/bootstrap/fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../framework/bootstrap/fonts/glyphicons-halflings-regular.woff") format("woff"), url("../framework/bootstrap/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../framework/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -7670,4 +7670,43 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+
+.app_header {
+  min-height: 60px;
+  width: 100%;
+  background-color: #009688;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 15px;
+}
+
+.app_header .app_header_menu_icon span {
+  color: #ffffff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  max-width: 400px;
+  min-height: 640px;
+  margin: 50px auto;
+  -webkit-font-smoothing: antialiased;
+  transition: 0.1s ease all;
+  -webkit-transition: 0.1s ease all;
+  -moz-transition: 0.1s ease all;
+  -o-transition: 0.1s ease all;
+  box-shadow: 1px 1px 4px 7px #f1f1f1;
+  -webkit-box-shadow: 1px 1px 4px 7px #f1f1f1;
+  -moz-box-shadow: 1px 1px 4px 7px #f1f1f1;
+  -o-box-shadow: 1px 1px 4px 7px #f1f1f1;
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
