@@ -7681,6 +7681,10 @@ button.close {
   padding: 10px 15px;
 }
 
+.app_header .app_header_menu_icon {
+  float: left;
+}
+
 .app_header .app_header_menu_icon span {
   color: #ffffff;
   font-size: 40px;
@@ -7689,13 +7693,14 @@ button.close {
 
 html {
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 body {
   position: relative;
-  max-width: 400px;
-  min-height: 640px;
-  margin: 50px auto;
+  max-width: 1540px;
+  min-height: 720px;
+  margin: 30px auto;
   -webkit-font-smoothing: antialiased;
   transition: 0.1s ease all;
   -webkit-transition: 0.1s ease all;
@@ -7710,11 +7715,25 @@ body {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
 .app_sidebar {
-  width: 300px;
+  width: 500px;
   position: absolute;
-  left: 0;
-  height: 576px;
+  top: 64px;
+  height: 655px;
+  background: #009688;
+  opacity: 0.3;
+  border-bottom-left-radius: 5px;
+  left: -500px;
+  transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+}
+
+.app_login {
+  width: 100%;
+  margin: 20px auto;
 }
