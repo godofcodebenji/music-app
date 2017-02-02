@@ -3,6 +3,10 @@ app.factory('appService', function(){
 	var appIsOnline=navigator.onLine;
 	var userData='';
 	var userType='';
+	var batteryPercentage='';
+	var batteryCharging=false;
+	var batteryLevelIsCritical=false;
+
 
 	return {
 		getOnlineStatus: function(){
@@ -45,8 +49,7 @@ app.controller('mxPlayer',function($scope, $http, $location, $route, appService)
 	}, function(response){
 		if (response.status!==200)
 		{
-			// $location.url('404');
-			alert(response.status);
+			$location.url('login');
 		}
 	});
 }).config(function($routeProvider){

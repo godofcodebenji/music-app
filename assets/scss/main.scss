@@ -8,7 +8,7 @@ html {
 body {
 	position: absolute;
 	width: 95%;
-	height: 90%;
+	height: 95%;
 	margin: 10px auto;
 	-webkit-font-smoothing: antialiased;
 	transition: 0.1s ease all;
@@ -27,6 +27,7 @@ body {
 	overflow: hidden;
 	left: 0;
 	right: 0;
+	background: linear-gradient(120deg,#00c4cc 25%,#6e4593 85%);
 }
 
 .app_view_provider {

@@ -5831,8 +5831,11 @@ button.close {
   top: 0;
   z-index: 1; }
 
+.no-padding {
+  padding: 0; }
+
 .app_header {
-  min-height: 60px;
+  min-height: 45px;
   width: 100%;
   background-color: #009688;
   border-top-left-radius: 10px;
@@ -5842,7 +5845,7 @@ button.close {
     float: left; }
     .app_header .app_header_menu_icon span {
       color: #ffffff;
-      font-size: 20px;
+      font-size: 25px;
       cursor: pointer; }
 
 html {
@@ -5852,7 +5855,7 @@ html {
 body {
   position: absolute;
   width: 95%;
-  height: 90%;
+  height: 95%;
   margin: 10px auto;
   -webkit-font-smoothing: antialiased;
   transition: 0.1s ease all;
@@ -5870,7 +5873,8 @@ body {
   border-bottom-right-radius: 5px;
   overflow: hidden;
   left: 0;
-  right: 0; }
+  right: 0;
+  background: linear-gradient(120deg, #00c4cc 25%, #6e4593 85%); }
 
 .app_view_provider {
   width: 100%;
@@ -5879,24 +5883,31 @@ body {
 .app_sidebar {
   position: absolute;
   top: 64px;
-  height: 655px;
+  height: 690px;
   background: #009688;
   border-bottom-left-radius: 5px;
-  left: -577px;
+  left: -50%;
   transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -o-transition: 0.2s ease all;
-  z-index: 4; }
+  z-index: 4;
+  width: 50%; }
   .app_sidebar.app_sidebar_hidden {
     left: 0; }
 
 .app_login {
   width: 100%;
   margin: 20px auto; }
+  .app_login .app_login_left_block .app_temp_logo {
+    font-family: cursive;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 900; }
 
 .app_404 {
-  background-color: #ffffff;
+  background-color: linear-gradient(120deg, #00c4cc 25%, #6e4593 85%);
   width: 100%;
   height: 100%;
   padding: 50px 0px; }

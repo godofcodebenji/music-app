@@ -2,7 +2,13 @@
 	width: 100%;
 	margin: 20px auto;
 	.app_login_left_block {
-
+		.app_temp_logo {
+			font-family: cursive;
+			font-size: 40px;
+			letter-spacing: 1px;
+			color: $white;
+			font-weight: 900;
+		}
 	}
 	.app_login_right_block {
 

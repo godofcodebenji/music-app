@@ -1,15 +1,16 @@
 .app_sidebar {
 	position: absolute;
 	top: 64px;
-	height: 655px;
+	height: 690px;
 	background: $sidebar-background;
 	border-bottom-left-radius: 5px;
-	left: -577px;
+	left: -50%;
 	transition: 0.2s ease all;
 	-webkit-transition: 0.2s ease all;
 	-moz-transition: 0.2s ease all;
 	-o-transition: 0.2s ease all;
 	z-index: 4;
+	width: 50%;
 	&.app_sidebar_hidden {
 		left: 0;
 	}

@@ -1,6 +1,7 @@
 .left-null {
 	left: 0px;
 }
+
 .app_spinner {
 	display: none;
 	position: absolute;
@@ -9,4 +10,8 @@
 	left: 0;
 	top: 0;
 	z-index: 1;
+}
+
+.no-padding {
+	padding: 0;
 }
