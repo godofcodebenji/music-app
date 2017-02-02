@@ -2,14 +2,21 @@ class mxComponent {
 
 	constructor()
 	{
-
+		
 	}
 
-	static sidebar()
+	static elements()
 	{
-		var menuButton = $('.app_header_menu_icon');
-		$('.app_header_menu_icon').hover(function(){
-			alert();
+		this.headerMenuButton=$('.app_header_menu_icon');
+		
+	}
+
+	static header()
+	{
+		this.elements();
+		this.sidebar=$('.app_sidebar');
+		this.headerMenuButton.click(function(){
+			$('.app_sidebar').toggleClass('app_sidebar_hidden');
 		});
 	}
 

@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<html ng-app="mxPlayer" ng-controller="mxPlayer">
+<html ng-cloak ng-app="mxPlayer" ng-controller="mxPlayer">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/mxplayer.css">
 	<title>{{ title }}</title>
+	<script type="text/javascript" src="components/vendor/jquery.js"></script>
+	<script type="text/javascript" src="components/mxComponent.js"></script>	
 </head>
 <body class="app">
+
 	<div ng-include src="'views/fragments/header.html'"></div>
 	<div class="" ng-view></div>
 	<div ng-include src="'views/fragments/sidebar.html'"></div>
-	<!-- Load your application here.... -->
-	<!-- Application body width === 450px or less -->
-	<!-- Application body height === 600px or less -->
 	<div ng-include src="'views/fragments/footer.html'"></div>
-<script type="text/javascript" src="framework/old/app.js"></script>
-<script type="text/javascript" src="framework/old/router.js"></script>
-<script type="text/javascript" src="controllers/mxplayer.js"></script>
-<script type="text/javascript" src="components/vendor/jquery.js"></script>
-<script type="text/javascript" src="components/mxComponent.js"></script>
-<script type="text/javascript">
-	mxComponent.sidebar();
-</script>
+
+	<script type="text/javascript" src="framework/old/app.js"></script>
+	<script type="text/javascript" src="framework/old/router.js"></script>
+	<script type="text/javascript" src="controllers/mxplayer.js"></script>
 </body>
 </html>
