@@ -9,14 +9,17 @@
 	<script type="text/javascript" src="components/mxComponent.js"></script>	
 </head>
 <body class="app">
-
+	<div class="app_spinner">
+		<p>Please wait....</p>			
+	</div>
 	<div ng-include src="'views/fragments/header.html'"></div>
-	<div class="" ng-view></div>
+	<div class="app_view_provider" ng-view></div>
 	<div ng-include src="'views/fragments/sidebar.html'"></div>
 	<div ng-include src="'views/fragments/footer.html'"></div>
 
 	<script type="text/javascript" src="framework/old/app.js"></script>
 	<script type="text/javascript" src="framework/old/router.js"></script>
 	<script type="text/javascript" src="controllers/mxplayer.js"></script>
+	<script type="text/javascript" src="controllers/dashboardController.js"></script>
 </body>
 </html>
